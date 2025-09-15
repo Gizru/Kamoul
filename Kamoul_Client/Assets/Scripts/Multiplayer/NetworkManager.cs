@@ -1,5 +1,6 @@
 using Riptide;
 using Riptide.Utils;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,7 +21,12 @@ public class NetworkManager : Singleton<NetworkManager>
     private void Start()
     {
         Client = new Client();
-        Connect();
+        Client.Connected += OnClientConnected;
+    }
+
+    private void OnClientConnected(object sender, EventArgs e)
+    {
+        throw new NotImplementedException();
     }
 
     public void Connect()
@@ -31,5 +37,11 @@ public class NetworkManager : Singleton<NetworkManager>
     private void FixedUpdate()
     {
         Client.Update();
+    }
+
+    protected override void OnDestroy()
+    {
+        base.OnDestroy();
+        Client.Connected -= OnClientConnected;
     }
 }
