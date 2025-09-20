@@ -1,0 +1,7 @@
+/root/Kamoul/Kamoul/bin/Release/net8.0/publish/Kamoul
+/root/Kamoul/Kamoul/bin/Release/net8.0/publish/appsettings.Development.json
+/root/Kamoul/Kamoul/bin/Release/net8.0/publish/appsettings.json
+/root/Kamoul/Kamoul/bin/Release/net8.0/publish/Kamoul.dll
+/root/Kamoul/Kamoul/bin/Release/net8.0/publish/Kamoul.deps.json
+/root/Kamoul/Kamoul/bin/Release/net8.0/publish/Kamoul.runtimeconfig.json
+/root/Kamoul/Kamoul/bin/Release/net8.0/publish/Kamoul.pdb
