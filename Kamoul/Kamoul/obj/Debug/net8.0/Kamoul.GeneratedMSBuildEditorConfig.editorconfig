@@ -9,47 +9,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Kamoul
 build_property.RootNamespace = Kamoul
-build_property.ProjectDir = c:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\
+build_property.ProjectDir = C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul
+build_property.MSBuildProjectDirectory = C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/App.razor]
+[C:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/Pages/Error.razor]
+[C:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/Pages/Home.razor]
+[C:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/Pages/Rules.razor]
+[C:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/Pages/Rules.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSdWxlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/Routes.razor]
+[C:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/_Imports.razor]
+[C:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/Layout/MainLayout.razor]
+[C:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-5w3ymqqnti
 
-[c:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/Layout/NavMenu.razor]
+[C:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-7itk7sob5j
 
-[c:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/Pages/Contact.razor]
+[C:/Users/pjoncourt.LYSIPACK/OneDrive - lysipack.fr/Bureau/Unity/Kamoul/Kamoul/Kamoul/Components/Pages/Contact.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250YWN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-9rrdwkbu92

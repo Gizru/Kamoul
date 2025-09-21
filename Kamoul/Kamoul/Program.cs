@@ -8,12 +8,44 @@ builder.Services.AddRazorComponents()
 
 var app = builder.Build();
 
+// Log startup information
+Console.WriteLine($"Application starting in {app.Environment.EnvironmentName} mode");
+Console.WriteLine($"Content root: {app.Environment.ContentRootPath}");
+Console.WriteLine($"Web root: {app.Environment.WebRootPath}");
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Error", createScopeForErrors: true);
+    // Add detailed error handling for production debugging
+    app.UseExceptionHandler(errorApp =>
+    {
+        errorApp.Run(async context =>
+        {
+            context.Response.StatusCode = 500;
+            context.Response.ContentType = "text/html";
+            
+            var exceptionHandlerPathFeature = context.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerPathFeature>();
+            var exception = exceptionHandlerPathFeature?.Error;
+            
+            await context.Response.WriteAsync($@"
+                <html>
+                <head><title>Error</title></head>
+                <body>
+                    <h1>An error occurred</h1>
+                    <h2>Exception: {exception?.GetType().Name}</h2>
+                    <p><strong>Message:</strong> {exception?.Message}</p>
+                    <p><strong>Stack Trace:</strong></p>
+                    <pre>{exception?.StackTrace}</pre>
+                </body>
+                </html>");
+        });
+    });
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
+}
+else
+{
+    app.UseDeveloperExceptionPage();
 }
 
 app.UseHttpsRedirection();
@@ -42,6 +74,9 @@ app.UseStaticFiles(new StaticFileOptions
     {
         // Add security headers
         ctx.Context.Response.Headers.Append("X-Content-Type-Options", "nosniff");
+        
+        // Debug: Log static file requests
+        Console.WriteLine($"Serving static file: {ctx.File.Name} - Status: {ctx.Context.Response.StatusCode}");
         
         // Cache static files for 1 year in production
         if (!app.Environment.IsDevelopment())
