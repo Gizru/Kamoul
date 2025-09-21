@@ -30,3 +30,34 @@ C:\Users\MOZGUS\Desktop\REPO\Kamoul-1\Kamoul\obj\Debug\net8.0\refint\Kamoul.dll
 C:\Users\MOZGUS\Desktop\REPO\Kamoul-1\Kamoul\obj\Debug\net8.0\Kamoul.pdb
 C:\Users\MOZGUS\Desktop\REPO\Kamoul-1\Kamoul\obj\Debug\net8.0\Kamoul.genruntimeconfig.cache
 C:\Users\MOZGUS\Desktop\REPO\Kamoul-1\Kamoul\obj\Debug\net8.0\ref\Kamoul.dll
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\Kamoul.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\Kamoul.AssemblyInfoInputs.cache
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\Kamoul.AssemblyInfo.cs
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\Kamoul.csproj.CoreCompileInputs.cache
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\Kamoul.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\Kamoul.sourcelink.json
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\Kamoul.dll
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\refint\Kamoul.dll
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\bin\Debug\net8.0\appsettings.json
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\bin\Debug\net8.0\Kamoul.staticwebassets.runtime.json
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\bin\Debug\net8.0\Kamoul.exe
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\bin\Debug\net8.0\Kamoul.deps.json
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\bin\Debug\net8.0\Kamoul.runtimeconfig.json
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\bin\Debug\net8.0\Kamoul.dll
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\bin\Debug\net8.0\Kamoul.pdb
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\staticwebassets\msbuild.Kamoul.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\staticwebassets\msbuild.build.Kamoul.props
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Kamoul.props
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Kamoul.props
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\scopedcss\bundle\Kamoul.styles.css
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\scopedcss\projectbundle\Kamoul.bundle.scp.css
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\Kamoul.pdb
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\Kamoul.genruntimeconfig.cache
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\ref\Kamoul.dll
+C:\Users\pjoncourt.LYSIPACK\OneDrive - lysipack.fr\Bureau\Unity\Kamoul\Kamoul\Kamoul\obj\Debug\net8.0\scopedcss\Components\Pages\Contact.razor.rz.scp.css

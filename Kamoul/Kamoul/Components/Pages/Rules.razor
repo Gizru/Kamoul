@@ -1,0 +1,595 @@
+@page "/rules"
+
+<PageTitle>Règles du Jeu KAMOUL</PageTitle>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="rules-card">
+                <h1 class="rules-title">Règles du Jeu KAMOUL</h1>
+                <p class="rules-subtitle">Découvrez toutes les règles et stratégies du jeu de cartes KAMOUL</p>
+                
+                <div class="rules-content">
+                    <div class="accordion" id="rulesAccordion">
+                <!-- Règles de Base -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingBasic">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBasic" aria-expanded="true" aria-controls="collapseBasic">
+                            📋 Règles de Base
+                        </button>
+                    </h2>
+                    <div id="collapseBasic" class="accordion-collapse collapse show" aria-labelledby="headingBasic" data-bs-parent="#rulesAccordion">
+                        <div class="accordion-body">
+                            <h4>Objectif du Jeu</h4>
+                            <div class="alert alert-success">
+                                <strong>Condition de victoire principale :</strong>
+                                <ul class="mb-0">
+                                    <li>Avoir 5 points ou moins dans son jeu</li>
+                                    <li>Dire "KAMOUL" uniquement à son tour <strong>AVANT</strong> de jouer</li>
+                                    <li><strong>Interdit :</strong> Jouer et dire KAMOUL dans le même tour</li>
+                                </ul>
+                            </div>
+
+                            <h5>Concepts Fondamentaux</h5>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h6 class="card-title">KAMOUL</h6>
+                                            <p class="card-text">Annoncer la victoire quand on a 5 points ou moins (AVANT de jouer)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h6 class="card-title">CONTRE KAMOUL</h6>
+                                            <p class="card-text">Contester l'annonce d'un autre joueur (fait passer le tour)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h6 class="card-title">KAMOUL ULTIME</h6>
+                                            <p class="card-text">Défausser toutes ses cartes d'un coup</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5>Règles de Priorité</h5>
+                            <ol>
+                                <li><strong>KAMOUL à -5 points</strong> est prioritaire sur <strong>KAMOUL au score</strong></li>
+                                <li><strong>KAMOUL ULTIME</strong> annule tous les autres KAMOUL</li>
+                                <li>En cas de <strong>CONTRE KAMOUL</strong> :
+                                    <ul>
+                                        <li>Égalité → Le dernier à avoir dit KAMOUL gagne</li>
+                                        <li>Non égalité → Le score le plus bas gagne</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Déroulement du Jeu -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingGameplay">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGameplay" aria-expanded="false" aria-controls="collapseGameplay">
+                            🎮 Déroulement du Jeu
+                        </button>
+                    </h2>
+                    <div id="collapseGameplay" class="accordion-collapse collapse" aria-labelledby="headingGameplay" data-bs-parent="#rulesAccordion">
+                        <div class="accordion-body">
+                            <h4>Partie de Chauffe</h4>
+                            <div class="alert alert-warning">
+                                <ul class="mb-0">
+                                    <li><strong>Objectif :</strong> Désigner le joueur qui commencera la première manche</li>
+                                    <li><strong>Déroulement :</strong> Partie complète avec toutes les règles normales</li>
+                                    <li><strong>Points :</strong> <strong>AUCUN point comptabilisé</strong> (partie de mise en jambe uniquement)</li>
+                                    <li><strong>Privilège KAMOUL ULTIME :</strong> Peut choisir de commencer <strong>n'importe quelle manche</strong> de la partie (une seule fois)</li>
+                                </ul>
+                            </div>
+
+                            <h5>Actions Possibles à Son Tour</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">1. Annoncer KAMOUL</h6>
+                                            <ul>
+                                                <li><strong>KAMOUL normal :</strong> Avoir 5 points ou moins dans son jeu</li>
+                                                <li><strong>KAMOUL au score :</strong>
+                                                    <ul>
+                                                        <li>Score ≤ -15 : Avoir exactement 30 points en main</li>
+                                                        <li>Score ≥ 15 : Avoir exactement son nombre de points cumulés en points dans son jeu</li>
+                                                    </ul>
+                                                </li>
+                                                <li><strong>Règle :</strong> Uniquement à son tour <strong>AVANT</strong> de jouer</li>
+                                                <li><strong>Interdit :</strong> Jouer et dire KAMOUL dans le même tour</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">2. Contre KAMOUL</h6>
+                                            <ul>
+                                                <li><strong>Condition :</strong> Un autre joueur a annoncé KAMOUL</li>
+                                                <li><strong>Effet :</strong> Contestation de l'annonce + <strong>passe le tour</strong></li>
+                                                <li><strong>Résolution :</strong>
+                                                    <ul>
+                                                        <li>Égalité → Le dernier à avoir dit KAMOUL gagne</li>
+                                                        <li>Non égalité → Le score le plus bas gagne</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5>Pioche</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Pioche Normale (Paquet)</h6>
+                                            <ul>
+                                                <li><strong>Actions possibles :</strong> Échanger avec une carte du jeu OU défausser directement</li>
+                                                <li><strong>Capacités :</strong> Peuvent être utilisées lors de la défausse directe (carte piochée uniquement)</li>
+                                                <li><strong>Cartes décollées :</strong> Si 2+ cartes se décollent, les ajouter au jeu</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Pioche Défausse</h6>
+                                            <ul>
+                                                <li><strong>Règle spéciale :</strong> La carte piochée ne peut PAS être défaussée directement</li>
+                                                <li><strong>Obligation :</strong> Doit être échangée avec une carte du jeu</li>
+                                                <li><strong>Capacités :</strong> Ne peuvent pas être utilisées (pas de défausse directe)</li>
+                                                <li><strong>Cartes décollées :</strong> Si 2+ cartes se décollent, les ajouter au jeu</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Valeurs et Capacités -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingValues">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseValues" aria-expanded="false" aria-controls="collapseValues">
+                            🃏 Valeurs et Capacités des Cartes
+                        </button>
+                    </h2>
+                    <div id="collapseValues" class="accordion-collapse collapse" aria-labelledby="headingValues" data-bs-parent="#rulesAccordion">
+                        <div class="accordion-body">
+                            <h4>Valeurs des Cartes</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Cartes Numérotées</h5>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Carte</th>
+                                                    <th>Valeur</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr><td>As (1)</td><td>1 point</td></tr>
+                                                <tr><td>2</td><td>2 points</td></tr>
+                                                <tr><td>3</td><td>3 points</td></tr>
+                                                <tr><td>4</td><td>4 points</td></tr>
+                                                <tr><td>5</td><td>5 points</td></tr>
+                                                <tr><td>6</td><td>6 points</td></tr>
+                                                <tr><td>7</td><td>7 points</td></tr>
+                                                <tr><td>8</td><td>8 points</td></tr>
+                                                <tr><td>9</td><td>9 points</td></tr>
+                                                <tr><td>10</td><td>10 points</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Figures</h5>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Carte</th>
+                                                    <th>Valeur</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr><td>Valet (V)</td><td>1 point</td></tr>
+                                                <tr><td>Dame (Q)</td><td>1 point</td></tr>
+                                                <tr><td>Roi Rouge</td><td>0 point</td></tr>
+                                                <tr><td>Roi Noir</td><td>15 points</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4>Capacités des Cartes</h4>
+                            <div class="alert alert-info">
+                                <strong>Règle d'Activation :</strong> Les capacités ne s'activent QUE si la carte vient d'être <strong>piochée</strong>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Cartes 7 et 8</h6>
+                                            <ul>
+                                                <li><strong>Action :</strong> Regarder une carte de son propre jeu</li>
+                                                <li><strong>Utilisation :</strong> Au moment de la défausse directe (carte piochée uniquement)</li>
+                                                <li><strong>Déclaration :</strong> Aucune (optionnelle)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Cartes 9 et 10</h6>
+                                            <ul>
+                                                <li><strong>Action :</strong> Regarder une carte dans le jeu d'un adversaire</li>
+                                                <li><strong>Utilisation :</strong> Au moment de la défausse directe (carte piochée uniquement)</li>
+                                                <li><strong>Déclaration :</strong> Aucune (optionnelle)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Valet (V) et Dame (Q)</h6>
+                                            <ul>
+                                                <li><strong>Action :</strong> Échanger deux cartes sans les regarder</li>
+                                                <li><strong>Utilisation :</strong> Au moment de la défausse directe (carte piochée uniquement)</li>
+                                                <li><strong>Déclaration :</strong> Aucune (responsabilité des joueurs d'être attentifs)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Roi (K)</h6>
+                                            <ul>
+                                                <li><strong>Action :</strong> Regarder deux cartes et les échanger ou non</li>
+                                                <li><strong>Utilisation :</strong> Au moment de la défausse directe (carte piochée uniquement)</li>
+                                                <li><strong>Déclaration :</strong> <strong>OBLIGATOIRE</strong> (annoncer la décision d'échanger ou non)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comptage des Points -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingScoring">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScoring" aria-expanded="false" aria-controls="collapseScoring">
+                            📊 Comptage des Points
+                        </button>
+                    </h2>
+                    <div id="collapseScoring" class="accordion-collapse collapse" aria-labelledby="headingScoring" data-bs-parent="#rulesAccordion">
+                        <div class="accordion-body">
+                            <h4>Système de Points</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Points de Base</h5>
+                                    <ul>
+                                        <li><strong>Score en main :</strong> Somme des valeurs de toutes les cartes en main</li>
+                                        <li><strong>Score cumulé :</strong> Total des points accumulés sur plusieurs manches</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Points Spéciaux</h5>
+                                    <ul>
+                                        <li><strong>KAMOUL :</strong> -5 points</li>
+                                        <li><strong>KAMOUL ULTIME :</strong> -15 points (défausser toutes ses cartes)</li>
+                                        <li><strong>KAMOUL au score :</strong> Retour à 0 points cumulés</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h5>Seuils Importants</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Seuil de 15 Points Cumulés</h6>
+                                            <ul>
+                                                <li><strong>Possibilité :</strong> Faire son score à partir de 15 points cumulés</li>
+                                                <li><strong>KAMOUL au score :</strong> Si le joueur a exactement son nombre de points cumulés en points dans son jeu</li>
+                                                <li><strong>Si KAMOUL au score :</strong> Retour à 0 de cumul</li>
+                                                <li><strong>Si KAMOUL au score puis CONTRE KAMOUL :</strong> 0 de score</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Seuil de 30 Points en Une Main</h6>
+                                            <ul>
+                                                <li><strong>Condition :</strong> À partir de -15 points cumulés</li>
+                                                <li><strong>Si KAMOUL :</strong> Victoire automatique (-31 points)</li>
+                                                <li><strong>Si KAMOUL puis CONTRE KAMOUL :</strong> 0 de score</li>
+                                                <li><strong>Si CONTRE KAMOUL :</strong> 0 de score</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5>Fin de Manche</h5>
+                            <div class="alert alert-warning">
+                                <strong>Conditions de Fin :</strong>
+                                <ul class="mb-0">
+                                    <li>Un joueur dépasse <strong>31 points cumulés</strong> OU <strong>-31 points cumulés</strong></li>
+                                    <li>Comptabilisation des points selon les valeurs des cartes en main</li>
+                                    <li><strong>Cas particuliers :</strong> 2 manches pour un joueur à -31 si un autre dépasse 31 sur la même main</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pénalités -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingPenalties">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePenalties" aria-expanded="false" aria-controls="collapsePenalties">
+                            ⚠️ Pénalités
+                        </button>
+                    </h2>
+                    <div id="collapsePenalties" class="accordion-collapse collapse" aria-labelledby="headingPenalties" data-bs-parent="#rulesAccordion">
+                        <div class="accordion-body">
+                            <h4>Pénalités de Pioche</h4>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">Cartes Décollées</h6>
+                                    <ul>
+                                        <li><strong>Situation :</strong> Deux ou plusieurs cartes se décollent du paquet de pioche</li>
+                                        <li><strong>Pénalité :</strong> 1 carte de pénalité par carte décollée supplémentaire</li>
+                                        <li><strong>Ajout :</strong> Le joueur doit ajouter ces cartes à son jeu</li>
+                                        <li><strong>Application :</strong> Même règle si pioche dans la défausse</li>
+                                        <li><strong>Note :</strong> Une seule carte décollée ne génère aucune pénalité</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4>Pénalités de Jeu</h4>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Jouer Hors Tour</h6>
+                                            <ul>
+                                                <li><strong>Situation :</strong> Jouer en dehors de son tour</li>
+                                                <li><strong>Pénalité :</strong> 1 carte</li>
+                                                <li><strong>Note :</strong> S'applique aussi au KAMOUL</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Carte Retournée</h6>
+                                            <ul>
+                                                <li><strong>Situation :</strong> Retourner une carte sans pouvoir la défausser</li>
+                                                <li><strong>Pénalité :</strong> 1 carte</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Changement d'Ordre</h6>
+                                            <ul>
+                                                <li><strong>Situation :</strong> Changer l'ordre de ses cartes après vérification par un autre joueur</li>
+                                                <li><strong>Pénalité :</strong> 1 carte</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4>Pénalités Spéciales</h4>
+                            <div class="alert alert-danger">
+                                <h6>KAMOUL > 5 Points</h6>
+                                <ul class="mb-0">
+                                    <li><strong>Situation :</strong> Annoncer KAMOUL avec plus de 5 points</li>
+                                    <li><strong>Pénalité :</strong> Somme de tous les scores de la main en cours</li>
+                                    <li><strong>Effet :</strong> Les autres joueurs ne prennent pas de score</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Format Tournoi -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTournament">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTournament" aria-expanded="false" aria-controls="collapseTournament">
+                            🏆 Format Tournoi
+                        </button>
+                    </h2>
+                    <div id="collapseTournament" class="accordion-collapse collapse" aria-labelledby="headingTournament" data-bs-parent="#rulesAccordion">
+                        <div class="accordion-body">
+                            <h4>Structure du Tournoi</h4>
+                            <div class="alert alert-info">
+                                <strong>Hiérarchie :</strong>
+                                <ul class="mb-0">
+                                    <li><strong>TOP (Tournoi) :</strong> BO3</li>
+                                    <li><strong>Partie :</strong> BO3</li>
+                                    <li><strong>Manche :</strong> BO3</li>
+                                </ul>
+                            </div>
+
+                            <h5>Règles de Victoire</h5>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Manche</h6>
+                                            <ul>
+                                                <li><strong>Fin :</strong> Un joueur dépasse 31 points cumulés OU -31 points cumulés</li>
+                                                <li><strong>Gagnant :</strong> Celui qui a le score le plus bas</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Partie (BO3)</h6>
+                                            <ul>
+                                                <li><strong>Victoire :</strong> 2 manches gagnées</li>
+                                                <li><strong>Maximum :</strong> 3 manches par partie</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">TOP (BO3)</h6>
+                                            <ul>
+                                                <li><strong>Victoire :</strong> 2 parties gagnées</li>
+                                                <li><strong>Maximum :</strong> 3 parties par TOP</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5>Cas d'Égalité</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Égalité sur les Manches</h6>
+                                            <ul>
+                                                <li><strong>Règle :</strong> Vérification du goal average sur le total de la partie</li>
+                                                <li><strong>Calcul :</strong> Différence entre les scores totaux des joueurs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Égalité sur les Parties</h6>
+                                            <ul>
+                                                <li><strong>Règle :</strong> Vérification du goal average sur le total du TOP</li>
+                                                <li><strong>Calcul :</strong> Différence entre les scores totaux des joueurs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Référence Rapide -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingQuickRef">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuickRef" aria-expanded="false" aria-controls="collapseQuickRef">
+                            📖 Référence Rapide
+                        </button>
+                    </h2>
+                    <div id="collapseQuickRef" class="accordion-collapse collapse" aria-labelledby="headingQuickRef" data-bs-parent="#rulesAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Objectif</h5>
+                                    <ul>
+                                        <li><strong>Victoire normale :</strong> 5 points ou moins + dire "KAMOUL" à son tour <strong>AVANT</strong> de jouer</li>
+                                        <li><strong>KAMOUL au score :</strong>
+                                            <ul>
+                                                <li>Score ≤ -15 : 30 points en main</li>
+                                                <li>Score ≥ 15 : Exactement son cumul en main</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Interdit :</strong> Jouer et dire KAMOUL dans le même tour</li>
+                                    </ul>
+
+                                    <h5>Actions à Son Tour</h5>
+                                    <ol>
+                                        <li><strong>KAMOUL</strong> (si ≤ 5 points, AVANT de jouer)</li>
+                                        <li><strong>CONTRE KAMOUL</strong> (contester, passe le tour)</li>
+                                        <li><strong>Piocher</strong> (paquet ou défausse)
+                                            <ul>
+                                                <li><strong>Pioche défausse :</strong> Obligation d'échanger (pas de défausse directe)</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Valeurs des Cartes</h5>
+                                    <ul>
+                                        <li><strong>1-10 :</strong> Valeur nominale</li>
+                                        <li><strong>V, Q :</strong> 1 point</li>
+                                        <li><strong>K Rouge :</strong> 0 point</li>
+                                        <li><strong>K Noir :</strong> 15 points</li>
+                                    </ul>
+
+                                    <h5>Capacités (à la défausse, carte piochée uniquement)</h5>
+                                    <ul>
+                                        <li><strong>7/8 :</strong> Regarder une de ses cartes (optionnel)</li>
+                                        <li><strong>9/10 :</strong> Regarder une carte adverse (optionnel)</li>
+                                        <li><strong>V/Q :</strong> Échanger 2 cartes (optionnel, pas de déclaration)</li>
+                                        <li><strong>K :</strong> Regarder 2 cartes et échanger ou non (optionnel, <strong>déclaration OBLIGATOIRE</strong>)</li>
+                                    </ul>
+
+                                    <h5>Points Spéciaux</h5>
+                                    <ul>
+                                        <li><strong>KAMOUL :</strong> -5 points</li>
+                                        <li><strong>KAMOUL ULTIME :</strong> -15 points (défausser toutes ses cartes)</li>
+                                        <li><strong>KAMOUL au score :</strong>
+                                            <ul>
+                                                <li>Score &lt; 15 : Fixé à -31 points</li>
+                                                <li>Score ≥ 15 : Retour à 0 (sans CONTRE KAMOUL)</li>
+                                                <li>Avec CONTRE KAMOUL : Aucune perte de points</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-info">
+                                <h5>Pénalités (1 carte chacune)</h5>
+                                <ul class="mb-0">
+                                    <li>Cartes décollées du paquet (2+ cartes, ajoutées au jeu)</li>
+                                    <li>Jouer hors tour</li>
+                                    <li>Carte retournée sans défausse</li>
+                                    <li>Changer l'ordre après vérification</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
