@@ -37,8 +37,10 @@
 
 .navbar-brand-img[b-7itk7sob5j] {
     height: 3rem;
-    width: 100%;
+    max-width: 100%;
+    width: auto;
     object-fit: contain;
+    object-position: left center;
 }
 
 .navbar-brand:hover[b-7itk7sob5j] {
@@ -53,6 +55,8 @@
     height: 1.5rem;
     margin-right: 0.75rem;
     top: -1px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 .bi[b-7itk7sob5j] {
@@ -140,5 +144,20 @@
         /* Allow sidebar to scroll for tall menus */
         height: calc(100vh - 3.5rem);
         overflow-y: auto;
+    }
+}
+
+/* Responsive image sizing */
+@media (max-width: 640px) {
+    .navbar-brand-img[b-7itk7sob5j] {
+        height: 2.5rem;
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 641px) {
+    .navbar-brand-img[b-7itk7sob5j] {
+        height: 3rem;
+        max-width: 250px;
     }
 }
