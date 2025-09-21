@@ -88,7 +88,10 @@ h1:focus {
 /* Contact Page Styles */
 .contact-card {
     background: linear-gradient(135deg, #e51627 0%, #052767 100%) !important;
+    background: -webkit-linear-gradient(135deg, #e51627 0%, #052767 100%) !important; /* Webkit fallback */
+    background: -moz-linear-gradient(135deg, #e51627 0%, #052767 100%) !important; /* Firefox fallback */
     background-color: #e51627 !important; /* Fallback for browsers that don't support gradients */
+    background-color: rgb(229, 22, 39) !important; /* RGB fallback */
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
@@ -216,7 +219,10 @@ h1:focus {
 /* Rules Page Styles */
 .rules-card {
     background: linear-gradient(135deg, #e51627 0%, #052767 100%) !important;
+    background: -webkit-linear-gradient(135deg, #e51627 0%, #052767 100%) !important; /* Webkit fallback */
+    background: -moz-linear-gradient(135deg, #e51627 0%, #052767 100%) !important; /* Firefox fallback */
     background-color: #e51627 !important; /* Fallback for browsers that don't support gradients */
+    background-color: rgb(229, 22, 39) !important; /* RGB fallback */
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
@@ -399,4 +405,10 @@ h1:focus {
         font-size: 1rem;
         padding: 1rem;
     }
+}
+
+/* Force red background for testing - remove this after confirming colors work */
+.contact-card, .rules-card {
+    background: red !important;
+    background-color: red !important;
 }
