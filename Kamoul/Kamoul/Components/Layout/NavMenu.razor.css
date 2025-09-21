@@ -37,10 +37,8 @@
 
 .navbar-brand-img {
     height: 3rem;
-    max-width: 100%;
-    width: auto;
+    width: 100%;
     object-fit: contain;
-    object-position: left center;
 }
 
 .navbar-brand:hover {
@@ -55,8 +53,6 @@
     height: 1.5rem;
     margin-right: 0.75rem;
     top: -1px;
-    object-fit: contain;
-    flex-shrink: 0;
 }
 
 .bi {
@@ -144,20 +140,5 @@
         /* Allow sidebar to scroll for tall menus */
         height: calc(100vh - 3.5rem);
         overflow-y: auto;
-    }
-}
-
-/* Responsive image sizing */
-@media (max-width: 640px) {
-    .navbar-brand-img {
-        height: 2.5rem;
-        max-width: 200px;
-    }
-}
-
-@media (min-width: 641px) {
-    .navbar-brand-img {
-        height: 3rem;
-        max-width: 250px;
     }
 }
