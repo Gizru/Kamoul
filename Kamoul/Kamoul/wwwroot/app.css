@@ -4,7 +4,8 @@ html, body {
 
 /* Fix Bootstrap 5.1.0 text-size-adjust compatibility */
 html {
-    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; /* Support Chrome 17+, Chrome Android 18+, Edge 79+ */
+    text-size-adjust: 100%; /* Support Chrome 54+, Chrome Android 54+, Edge 79+ */
 }
 
 /* Fix Bootstrap 5.1.0 -webkit-match-parent compatibility warning */
