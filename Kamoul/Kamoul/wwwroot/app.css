@@ -2,9 +2,8 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* Fix Bootstrap 5.1.0 -webkit-text-size-adjust compatibility warning */
+/* Fix Bootstrap 5.1.0 text-size-adjust compatibility */
 html {
-    -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
 }
 
@@ -15,8 +14,9 @@ html {
     text-align: inherit;
 }
 
-/* Fix Bootstrap 5.1.0 -webkit-print-color-adjust compatibility warning */
+/* Fix Bootstrap 5.1.0 print-color-adjust compatibility */
 * {
+    -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
 }
 
