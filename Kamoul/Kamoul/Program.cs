@@ -84,6 +84,12 @@ app.UseStaticFiles(new StaticFileOptions
             Console.WriteLine($"Image file served: {ctx.File.Name} - Content-Type: {ctx.Context.Response.ContentType}");
         }
         
+        // Debug: Log CSS file serving
+        if (ctx.File.Name.EndsWith(".css"))
+        {
+            Console.WriteLine($"CSS file served: {ctx.File.Name} - Content-Type: {ctx.Context.Response.ContentType}");
+        }
+        
         // Cache static files for 1 year in production
         if (!app.Environment.IsDevelopment())
         {

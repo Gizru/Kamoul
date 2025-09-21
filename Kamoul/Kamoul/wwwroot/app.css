@@ -4,7 +4,6 @@ html, body {
 
 /* Fix Bootstrap 5.1.0 text-size-adjust compatibility */
 html {
-    -webkit-text-size-adjust: 100%; /* Support Chrome 17+, Chrome Android 18+, Edge 79+ */
     text-size-adjust: 100%; /* Support Chrome 54+, Chrome Android 54+, Edge 79+ */
 }
 
@@ -88,7 +87,8 @@ h1:focus {
 
 /* Contact Page Styles */
 .contact-card {
-    background: linear-gradient(135deg, #e51627 0%, #052767 100%);
+    background: linear-gradient(135deg, #e51627 0%, #052767 100%) !important;
+    background-color: #e51627 !important; /* Fallback for browsers that don't support gradients */
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
@@ -215,7 +215,8 @@ h1:focus {
 }
 /* Rules Page Styles */
 .rules-card {
-    background: linear-gradient(135deg, #e51627 0%, #052767 100%);
+    background: linear-gradient(135deg, #e51627 0%, #052767 100%) !important;
+    background-color: #e51627 !important; /* Fallback for browsers that don't support gradients */
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
