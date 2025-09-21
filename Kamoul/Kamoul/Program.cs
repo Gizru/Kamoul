@@ -18,7 +18,44 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseStaticFiles();
+// Add security headers globally
+app.Use(async (context, next) =>
+{
+    context.Response.Headers.Append("X-Content-Type-Options", "nosniff");
+    context.Response.Headers.Append("X-Frame-Options", "DENY");
+    context.Response.Headers.Append("X-XSS-Protection", "1; mode=block");
+    
+    // Remove or customize the Server header for security
+    if (context.Response.Headers.ContainsKey("Server"))
+    {
+        context.Response.Headers.Remove("Server");
+    }
+    context.Response.Headers.Append("Server", "WebServer");
+    
+    await next();
+});
+
+// Configure static file caching
+app.UseStaticFiles(new StaticFileOptions
+{
+    OnPrepareResponse = ctx =>
+    {
+        // Add security headers
+        ctx.Context.Response.Headers.Append("X-Content-Type-Options", "nosniff");
+        
+        // Cache static files for 1 year in production
+        if (!app.Environment.IsDevelopment())
+        {
+            ctx.Context.Response.Headers.Append("Cache-Control", "public,max-age=31536000");
+        }
+        else
+        {
+            // No caching in development
+            ctx.Context.Response.Headers.Append("Cache-Control", "no-cache,must-revalidate");
+            ctx.Context.Response.Headers.Append("Expires", "0");
+        }
+    }
+});
 app.UseAntiforgery();
 
 app.MapRazorComponents<App>()

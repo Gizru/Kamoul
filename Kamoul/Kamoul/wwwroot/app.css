@@ -2,6 +2,29 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+/* Fix Bootstrap 5.1.0 -webkit-text-size-adjust compatibility warning */
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+/* Fix Bootstrap 5.1.0 -webkit-match-parent compatibility warning */
+* {
+    text-align: -webkit-match-parent;
+    text-align: match-parent;
+    text-align: inherit;
+}
+
+/* Fix Bootstrap 5.1.0 -webkit-print-color-adjust compatibility warning */
+* {
+    print-color-adjust: exact;
+}
+
+/* Fix Bootstrap 5.1.0 color-adjust deprecation warning */
+* {
+    color-adjust: exact;
+}
+
 a, .btn-link {
     color: #e51627;
 }
