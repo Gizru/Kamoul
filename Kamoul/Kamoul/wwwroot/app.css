@@ -379,6 +379,31 @@ h1:focus {
     max-width: 100%;
 }
 
+/* Image sizing fixes for VPS hosting */
+.navbar-brand-img {
+    height: 3rem !important;
+    width: 100% !important;
+    object-fit: contain !important;
+    max-width: 100%;
+    display: block;
+}
+
+.nav-icon {
+    display: inline-block !important;
+    position: relative !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    margin-right: 0.75rem !important;
+    top: -1px !important;
+    object-fit: contain !important;
+}
+
+/* Ensure images load properly */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Responsive design for rules page */
 @media (max-width: 768px) {
     .rules-card {

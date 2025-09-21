@@ -78,6 +78,12 @@ app.UseStaticFiles(new StaticFileOptions
         // Debug: Log static file requests
         Console.WriteLine($"Serving static file: {ctx.File.Name} - Status: {ctx.Context.Response.StatusCode}");
         
+        // Debug: Log image file serving
+        if (ctx.File.Name.EndsWith(".png") || ctx.File.Name.EndsWith(".ico") || ctx.File.Name.EndsWith(".jpg") || ctx.File.Name.EndsWith(".jpeg"))
+        {
+            Console.WriteLine($"Image file served: {ctx.File.Name} - Content-Type: {ctx.Context.Response.ContentType}");
+        }
+        
         // Cache static files for 1 year in production
         if (!app.Environment.IsDevelopment())
         {
