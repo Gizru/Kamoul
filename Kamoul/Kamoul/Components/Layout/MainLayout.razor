@@ -9,11 +9,11 @@
 
 <MudLayout>
     <MudAppBar Elevation="1"  Style="background: linear-gradient(135deg, #e51627 0%, #052767 100%)">
-        <MudStack Row="true" Edge="Edge.Start" Width="100vh">
+        <MudStack Row="true" Justify="Justify.FlexStart" Style="width: 100vh;">
             <MudImage Src="KamoulTitle.png" Alt="Kamoul" Style="max-height:50px" />
         </MudStack>
         <MudSpacer />
-        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.End" OnClick="@((e) => DrawerToggle())" />
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" OnClick="@((e) => DrawerToggle())" />
     </MudAppBar>
     <MudDrawer @bind-Open="_drawerOpen" Anchor="Anchor.End" ClipMode="DrawerClipMode.Always" Elevation="2" Style="background: linear-gradient(135deg, #e51627 0%, #052767 100%)">
         <NavMenu />

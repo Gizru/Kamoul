@@ -2,53 +2,51 @@
 
 <PageTitle>Règles du Jeu KAMOUL</PageTitle>
 
+<MudText Typo="Typo.h3" Class="mb-1" Align="Align.Center">Règles du Jeu KAMOUL</MudText>
+<MudText Typo="Typo.subtitle1" Align="Align.Center" Class="mb-6" Style="opacity:.9;">Découvrez toutes les règles et stratégies du jeu de cartes KAMOUL</MudText>  
+
 <MudContainer Class="pa-4">
     <MudTabs Elevation="2" Rounded="true" PanelClass="pa-6" Color="Color.Success" Centered="true" Style="background: linear-gradient(135deg, #e51627 0%, #052767 100%); color: white;border-radius: 15px;">
             <MudTabPanel Text="📋 Règles de Base">
-                <MudStack Row="true">
-                <MudStack Column="true">
-                    <MudText Typo="Typo.h5" Class="mb-2">Objectif du Jeu</MudText>
-                    <MudAlert Severity="Severity.Success" Variant="Variant.Filled" Dense="true" Class="mb-4">
-                        <MudText Typo="Typo.subtitle2" Class="mb-2"><strong>Condition de victoire principale :</strong></MudText>
-                        <MudList T="string" Dense="true">
-                            <MudListItem T="string">Avoir 5 points ou moins dans son jeu</MudListItem>
-                            <MudListItem T="string">Dire "KAMOUL" uniquement à son tour <b>AVANT</b> de jouer</MudListItem>
-                            <MudListItem T="string"><b>Interdit :</b> Jouer et dire KAMOUL dans le même tour</MudListItem>
-                        </MudList>
-                    </MudAlert>
-                </MudStack>
-                <MudStack Column="true">
-                    <MudText Typo="Typo.h6" Class="mb-2">Concepts Fondamentaux</MudText>
-                    <MudGrid>
-                        <MudItem xs="12" md="4">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">KAMOUL</MudText>
-                                    <MudText Typo="Typo.body2">Annoncer la victoire quand on a 5 points ou moins (AVANT de jouer)</MudText>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                        <MudItem xs="12" md="4">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">CONTRE KAMOUL</MudText>
-                                    <MudText Typo="Typo.body2">Contester l'annonce d'un autre joueur (fait passer le tour)</MudText>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                        <MudItem xs="12" md="4">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">KAMOUL ULTIME</MudText>
-                                    <MudText Typo="Typo.body2">Défausser toutes ses cartes d'un coup</MudText>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                    </MudGrid>
-                </MudStack>
-                <MudStack Column="true">
-                    <MudText Typo="Typo.h6" Class="mt-4">Règles de Priorité</MudText>
-                    <MudList T="string" Dense="true" Row="true">
+                <MudText Typo="Typo.h5" Class="mb-2">Objectif du Jeu</MudText>
+                <MudAlert Severity="Severity.Success" Variant="Variant.Filled" Dense="true" Class="mb-4">
+                    <MudText Typo="Typo.subtitle2" Class="mb-2"><strong>Condition de victoire principale :</strong></MudText>
+                    <MudList T="string" Dense="true">
+                        <MudListItem T="string">Avoir 5 points ou moins dans son jeu</MudListItem>
+                        <MudListItem T="string">Dire "KAMOUL" uniquement à son tour <b>AVANT</b> de jouer</MudListItem>
+                        <MudListItem T="string"><b>Interdit :</b> Jouer et dire KAMOUL dans le même tour</MudListItem>
+                    </MudList>
+                </MudAlert>
+                <MudText Typo="Typo.h6" Class="mb-2">Concepts Fondamentaux</MudText>
+                <MudGrid>
+                    <MudItem xs="12" md="4">
+                        <MudCard>
+                            <MudCardContent>
+                                <MudText Typo="Typo.subtitle1">KAMOUL</MudText>
+                                <MudText Typo="Typo.body2">Annoncer la victoire quand on a 5 points ou moins (AVANT de jouer)</MudText>
+                            </MudCardContent>
+                        </MudCard>
+                    </MudItem>
+                    <MudItem xs="12" md="4">
+                        <MudCard>
+                            <MudCardContent>
+                                <MudText Typo="Typo.subtitle1">CONTRE KAMOUL</MudText>
+                                <MudText Typo="Typo.body2">Contester l'annonce d'un autre joueur (fait passer le tour)</MudText>
+                            </MudCardContent>
+                        </MudCard>
+                    </MudItem>
+                    <MudItem xs="12" md="4">
+                        <MudCard>
+                            <MudCardContent>
+                                <MudText Typo="Typo.subtitle1">KAMOUL ULTIME</MudText>
+                                <MudText Typo="Typo.body2">Défausser toutes ses cartes d'un coup</MudText>
+                            </MudCardContent>
+                        </MudCard>
+                    </MudItem>
+                </MudGrid>
+                <MudText Typo="Typo.h6" Class="mt-4">Règles de Priorité</MudText>
+                <MudAlert Severity="Severity.Info" Variant="Variant.Filled" Dense="true" Class="mb-4">
+                    <MudList T="string" Dense="true">
                         <MudListItem T="string"><b>KAMOUL à -5 points</b> est prioritaire sur <b>KAMOUL au score</b></MudListItem>
                         <MudListItem T="string"><b>KAMOUL ULTIME</b> annule tous les autres KAMOUL</MudListItem>
                         <MudListItem T="string">
@@ -59,8 +57,7 @@
                             </MudList>
                         </MudListItem>
                     </MudList>
-                </MudStack>
-                </MudStack>
+                </MudAlert>
             </MudTabPanel>
             <MudTabPanel Text="🎮 Déroulement du Jeu">
                     <MudText Typo="Typo.h5" Class="mb-2">Partie de Chauffe</MudText>
@@ -150,397 +147,385 @@
                     </MudGrid>
                     
             </MudTabPanel>
-            <MudTabPanel Text="Tab Three">
-                <MudText>Content Three</MudText>
-            </MudTabPanel>
-            <MudTabPanel Text="Tab Disabled" Disabled="true">
-                <MudText>Content Disabled</MudText>
-            </MudTabPanel>
         </MudTabs>
 </MudContainer>
 
- <MudText Typo="Typo.h3" Class="mb-1" Align="Align.Center">Règles du Jeu KAMOUL</MudText>
-        <MudText Typo="Typo.subtitle1" Align="Align.Center" Class="mb-6" Style="opacity:.9;">Découvrez toutes les règles et stratégies du jeu de cartes KAMOUL</MudText>
-        <MudPaper Elevation="1" Class="pa-6" Style="background-color: white; color: inherit;">
-            <MudExpansionPanels MultiExpansion="true" Elevation="0">
-                
+<MudPaper Elevation="1" Class="pa-6" Style="background-color: white; color: inherit;">
+    <MudExpansionPanels MultiExpansion="true" Elevation="0">
+        <MudExpansionPanel Text="🃏 Valeurs et Capacités des Cartes">
+            <MudText Typo="Typo.h5" Class="mb-2">Valeurs des Cartes</MudText>
+            <MudGrid>
+                <MudItem xs="12" md="6">
+                    <MudText Typo="Typo.h6" Class="mb-2">Cartes Numérotées</MudText>
+                    <MudSimpleTable Dense="true" Hover="true" Bordered="true">
+                                    <thead>
+                                        <tr>
+                                            <th>Carte</th>
+                                            <th>Valeur</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>As (1)</td><td>1 point</td></tr>
+                                        <tr><td>2</td><td>2 points</td></tr>
+                                        <tr><td>3</td><td>3 points</td></tr>
+                                        <tr><td>4</td><td>4 points</td></tr>
+                                        <tr><td>5</td><td>5 points</td></tr>
+                                        <tr><td>6</td><td>6 points</td></tr>
+                                        <tr><td>7</td><td>7 points</td></tr>
+                                        <tr><td>8</td><td>8 points</td></tr>
+                                        <tr><td>9</td><td>9 points</td></tr>
+                                        <tr><td>10</td><td>10 points</td></tr>
+                                    </tbody>
+                    </MudSimpleTable>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudText Typo="Typo.h6" Class="mb-2">Figures</MudText>
+                    <MudSimpleTable Dense="true" Hover="true" Bordered="true">
+                                    <thead>
+                                        <tr>
+                                            <th>Carte</th>
+                                            <th>Valeur</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>Valet (V)</td><td>1 point</td></tr>
+                                        <tr><td>Dame (Q)</td><td>1 point</td></tr>
+                                        <tr><td>Roi Rouge</td><td>0 point</td></tr>
+                                        <tr><td>Roi Noir</td><td>15 points</td></tr>
+                                    </tbody>
+                    </MudSimpleTable>
+                </MudItem>
+            </MudGrid>
 
-                
+            <MudText Typo="Typo.h5" Class="mt-4 mb-2">Capacités des Cartes</MudText>
+            <MudAlert Severity="Severity.Info" Variant="Variant.Filled" Dense="true" Class="mb-4">
+                <b>Règle d'Activation :</b> Les capacités ne s'activent QUE si la carte vient d'être <b>piochée</b>
+            </MudAlert>
 
-                <MudExpansionPanel Text="🃏 Valeurs et Capacités des Cartes">
-                    <MudText Typo="Typo.h5" Class="mb-2">Valeurs des Cartes</MudText>
-                    <MudGrid>
-                        <MudItem xs="12" md="6">
-                            <MudText Typo="Typo.h6" Class="mb-2">Cartes Numérotées</MudText>
-                            <MudSimpleTable Dense="true" Hover="true" Bordered="true">
-                                            <thead>
-                                                <tr>
-                                                    <th>Carte</th>
-                                                    <th>Valeur</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr><td>As (1)</td><td>1 point</td></tr>
-                                                <tr><td>2</td><td>2 points</td></tr>
-                                                <tr><td>3</td><td>3 points</td></tr>
-                                                <tr><td>4</td><td>4 points</td></tr>
-                                                <tr><td>5</td><td>5 points</td></tr>
-                                                <tr><td>6</td><td>6 points</td></tr>
-                                                <tr><td>7</td><td>7 points</td></tr>
-                                                <tr><td>8</td><td>8 points</td></tr>
-                                                <tr><td>9</td><td>9 points</td></tr>
-                                                <tr><td>10</td><td>10 points</td></tr>
-                                            </tbody>
-                            </MudSimpleTable>
-                        </MudItem>
-                        <MudItem xs="12" md="6">
-                            <MudText Typo="Typo.h6" Class="mb-2">Figures</MudText>
-                            <MudSimpleTable Dense="true" Hover="true" Bordered="true">
-                                            <thead>
-                                                <tr>
-                                                    <th>Carte</th>
-                                                    <th>Valeur</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr><td>Valet (V)</td><td>1 point</td></tr>
-                                                <tr><td>Dame (Q)</td><td>1 point</td></tr>
-                                                <tr><td>Roi Rouge</td><td>0 point</td></tr>
-                                                <tr><td>Roi Noir</td><td>15 points</td></tr>
-                                            </tbody>
-                            </MudSimpleTable>
-                        </MudItem>
-                    </MudGrid>
-
-                    <MudText Typo="Typo.h5" Class="mt-4 mb-2">Capacités des Cartes</MudText>
-                    <MudAlert Severity="Severity.Info" Variant="Variant.Filled" Dense="true" Class="mb-4">
-                        <b>Règle d'Activation :</b> Les capacités ne s'activent QUE si la carte vient d'être <b>piochée</b>
-                    </MudAlert>
-
-                    <MudGrid>
-                        <MudItem xs="12" md="6">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">Cartes 7 et 8</MudText>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string"><b>Action :</b> Regarder une carte de son propre jeu</MudListItem>
-                                        <MudListItem T="string"><b>Utilisation :</b> Au moment de la défausse directe (carte piochée uniquement)</MudListItem>
-                                        <MudListItem T="string"><b>Déclaration :</b> Aucune (optionnelle)</MudListItem>
-                                    </MudList>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                        <MudItem xs="12" md="6">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">Cartes 9 et 10</MudText>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string"><b>Action :</b> Regarder une carte dans le jeu d'un adversaire</MudListItem>
-                                        <MudListItem T="string"><b>Utilisation :</b> Au moment de la défausse directe (carte piochée uniquement)</MudListItem>
-                                        <MudListItem T="string"><b>Déclaration :</b> Aucune (optionnelle)</MudListItem>
-                                    </MudList>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                        <MudItem xs="12" md="6">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">Valet (V) et Dame (Q)</MudText>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string"><b>Action :</b> Échanger deux cartes sans les regarder</MudListItem>
-                                        <MudListItem T="string"><b>Utilisation :</b> Au moment de la défausse directe (carte piochée uniquement)</MudListItem>
-                                        <MudListItem T="string"><b>Déclaration :</b> Aucune (responsabilité des joueurs d'être attentifs)</MudListItem>
-                                    </MudList>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                        <MudItem xs="12" md="6">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">Roi (K)</MudText>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string"><b>Action :</b> Regarder deux cartes et les échanger ou non</MudListItem>
-                                        <MudListItem T="string"><b>Utilisation :</b> Au moment de la défausse directe (carte piochée uniquement)</MudListItem>
-                                        <MudListItem T="string"><b>Déclaration :</b> <b>OBLIGATOIRE</b> (annoncer la décision d'échanger ou non)</MudListItem>
-                                    </MudList>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                    </MudGrid>
-                </MudExpansionPanel>
-
-                <MudExpansionPanel Text="📊 Comptage des Points">
-                    <MudText Typo="Typo.h5" Class="mb-2">Système de Points</MudText>
-                    <MudGrid>
-                        <MudItem xs="12" md="6">
-                            <MudText Typo="Typo.h6">Points de Base</MudText>
-                            <MudList T="string" Dense="true">
-                                <MudListItem T="string"><b>Score en main :</b> Somme des valeurs de toutes les cartes en main</MudListItem>
-                                <MudListItem T="string"><b>Score cumulé :</b> Total des points accumulés sur plusieurs manches</MudListItem>
-                            </MudList>
-                        </MudItem>
-                        <MudItem xs="12" md="6">
-                            <MudText Typo="Typo.h6">Points Spéciaux</MudText>
-                            <MudList T="string" Dense="true">
-                                <MudListItem T="string"><b>KAMOUL :</b> -5 points</MudListItem>
-                                <MudListItem T="string"><b>KAMOUL ULTIME :</b> -15 points (défausser toutes ses cartes)</MudListItem>
-                                <MudListItem T="string"><b>KAMOUL au score :</b> Retour à 0 points cumulés</MudListItem>
-                            </MudList>
-                        </MudItem>
-                    </MudGrid>
-
-                    <MudText Typo="Typo.h6" Class="mt-4">Seuils Importants</MudText>
-                    <MudGrid>
-                        <MudItem xs="12" md="6">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">Seuil de 15 Points Cumulés</MudText>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string"><b>Possibilité :</b> Faire son score à partir de 15 points cumulés</MudListItem>
-                                        <MudListItem T="string"><b>KAMOUL au score :</b> Si le joueur a exactement son nombre de points cumulés en points dans son jeu</MudListItem>
-                                        <MudListItem T="string"><b>Si KAMOUL au score :</b> Retour à 0 de cumul</MudListItem>
-                                        <MudListItem T="string"><b>Si KAMOUL au score puis CONTRE KAMOUL :</b> 0 de score</MudListItem>
-                                    </MudList>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                        <MudItem xs="12" md="6">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">Seuil de 30 Points en Une Main</MudText>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string"><b>Condition :</b> À partir de -15 points cumulés</MudListItem>
-                                        <MudListItem T="string"><b>Si KAMOUL :</b> Victoire automatique (-31 points)</MudListItem>
-                                        <MudListItem T="string"><b>Si KAMOUL puis CONTRE KAMOUL :</b> 0 de score</MudListItem>
-                                        <MudListItem T="string"><b>Si CONTRE KAMOUL :</b> 0 de score</MudListItem>
-                                    </MudList>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                    </MudGrid>
-
-                    <MudText Typo="Typo.h6" Class="mt-4">Fin de Manche</MudText>
-                    <MudAlert Severity="Severity.Warning" Variant="Variant.Filled" Dense="true">
-                        <b>Conditions de Fin :</b>
-                        <MudList T="string" Dense="true">
-                            <MudListItem T="string">Un joueur dépasse <b>31 points cumulés</b> OU <b>-31 points cumulés</b></MudListItem>
-                            <MudListItem T="string">Comptabilisation des points selon les valeurs des cartes en main</MudListItem>
-                            <MudListItem T="string"><b>Cas particuliers :</b> 2 manches pour un joueur à -31 si un autre dépasse 31 sur la même main</MudListItem>
-                        </MudList>
-                    </MudAlert>
-                </MudExpansionPanel>
-
-                <MudExpansionPanel Text="⚠️ Pénalités">
-                    <MudText Typo="Typo.h5" Class="mb-2">Pénalités de Pioche</MudText>
-                    <MudCard Class="mb-4">
+            <MudGrid>
+                <MudItem xs="12" md="6">
+                    <MudCard>
                         <MudCardContent>
-                            <MudText Typo="Typo.subtitle1">Cartes Décollées</MudText>
+                            <MudText Typo="Typo.subtitle1">Cartes 7 et 8</MudText>
                             <MudList T="string" Dense="true">
-                                <MudListItem T="string"><b>Situation :</b> Deux ou plusieurs cartes se décollent du paquet de pioche</MudListItem>
-                                <MudListItem T="string"><b>Pénalité :</b> 1 carte de pénalité par carte décollée supplémentaire</MudListItem>
-                                <MudListItem T="string"><b>Ajout :</b> Le joueur doit ajouter ces cartes à son jeu</MudListItem>
-                                <MudListItem T="string"><b>Application :</b> Même règle si pioche dans la défausse</MudListItem>
-                                <MudListItem T="string"><b>Note :</b> Une seule carte décollée ne génère aucune pénalité</MudListItem>
+                                <MudListItem T="string"><b>Action :</b> Regarder une carte de son propre jeu</MudListItem>
+                                <MudListItem T="string"><b>Utilisation :</b> Au moment de la défausse directe (carte piochée uniquement)</MudListItem>
+                                <MudListItem T="string"><b>Déclaration :</b> Aucune (optionnelle)</MudListItem>
                             </MudList>
                         </MudCardContent>
                     </MudCard>
-
-                    <MudText Typo="Typo.h5" Class="mb-2">Pénalités de Jeu</MudText>
-                    <MudGrid>
-                        <MudItem xs="12" md="4">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">Jouer Hors Tour</MudText>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string"><b>Situation :</b> Jouer en dehors de son tour</MudListItem>
-                                        <MudListItem T="string"><b>Pénalité :</b> 1 carte</MudListItem>
-                                        <MudListItem T="string"><b>Note :</b> S'applique aussi au KAMOUL</MudListItem>
-                                    </MudList>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                        <MudItem xs="12" md="4">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">Carte Retournée</MudText>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string"><b>Situation :</b> Retourner une carte sans pouvoir la défausser</MudListItem>
-                                        <MudListItem T="string"><b>Pénalité :</b> 1 carte</MudListItem>
-                                    </MudList>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                        <MudItem xs="12" md="4">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">Changement d'Ordre</MudText>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string"><b>Situation :</b> Changer l'ordre de ses cartes après vérification par un autre joueur</MudListItem>
-                                        <MudListItem T="string"><b>Pénalité :</b> 1 carte</MudListItem>
-                                    </MudList>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                    </MudGrid>
-
-                    <MudText Typo="Typo.h5" Class="mt-4 mb-2">Pénalités Spéciales</MudText>
-                    <MudAlert Severity="Severity.Error" Variant="Variant.Filled" Dense="true">
-                        <MudText Typo="Typo.subtitle1">KAMOUL &gt; 5 Points</MudText>
-                        <MudList T="string" Dense="true" Class="mt-2">
-                            <MudListItem T="string"><b>Situation :</b> Annoncer KAMOUL avec plus de 5 points</MudListItem>
-                            <MudListItem T="string"><b>Pénalité :</b> Somme de tous les scores de la main en cours</MudListItem>
-                            <MudListItem T="string"><b>Effet :</b> Les autres joueurs ne prennent pas de score</MudListItem>
-                        </MudList>
-                    </MudAlert>
-                </MudExpansionPanel>
-
-                <MudExpansionPanel Text="🏆 Format Tournoi">
-                    <MudText Typo="Typo.h5" Class="mb-2">Structure du Tournoi</MudText>
-                    <MudAlert Severity="Severity.Info" Variant="Variant.Filled" Dense="true" Class="mb-4">
-                        <b>Hiérarchie :</b>
-                        <MudList T="string" Dense="true">
-                            <MudListItem T="string"><b>TOP (Tournoi) :</b> BO3</MudListItem>
-                            <MudListItem T="string"><b>Partie :</b> BO3</MudListItem>
-                            <MudListItem T="string"><b>Manche :</b> BO3</MudListItem>
-                        </MudList>
-                    </MudAlert>
-
-                    <MudText Typo="Typo.h6" Class="mb-2">Règles de Victoire</MudText>
-                    <MudGrid>
-                        <MudItem xs="12" md="4">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">Manche</MudText>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string"><b>Fin :</b> Un joueur dépasse 31 points cumulés OU -31 points cumulés</MudListItem>
-                                        <MudListItem T="string"><b>Gagnant :</b> Celui qui a le score le plus bas</MudListItem>
-                                    </MudList>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                        <MudItem xs="12" md="4">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">Partie (BO3)</MudText>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string"><b>Victoire :</b> 2 manches gagnées</MudListItem>
-                                        <MudListItem T="string"><b>Maximum :</b> 3 manches par partie</MudListItem>
-                                    </MudList>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                        <MudItem xs="12" md="4">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">TOP (BO3)</MudText>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string"><b>Victoire :</b> 2 parties gagnées</MudListItem>
-                                        <MudListItem T="string"><b>Maximum :</b> 3 parties par TOP</MudListItem>
-                                    </MudList>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                    </MudGrid>
-
-                    <MudText Typo="Typo.h6" Class="mt-4 mb-2">Cas d'Égalité</MudText>
-                    <MudGrid>
-                        <MudItem xs="12" md="6">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">Égalité sur les Manches</MudText>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string"><b>Règle :</b> Vérification du goal average sur le total de la partie</MudListItem>
-                                        <MudListItem T="string"><b>Calcul :</b> Différence entre les scores totaux des joueurs</MudListItem>
-                                    </MudList>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                        <MudItem xs="12" md="6">
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudText Typo="Typo.subtitle1">Égalité sur les Parties</MudText>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string"><b>Règle :</b> Vérification du goal average sur le total du TOP</MudListItem>
-                                        <MudListItem T="string"><b>Calcul :</b> Différence entre les scores totaux des joueurs</MudListItem>
-                                    </MudList>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                    </MudGrid>
-                </MudExpansionPanel>
-
-                <MudExpansionPanel Text="📖 Référence Rapide">
-                    <MudGrid>
-                        <MudItem xs="12" md="6">
-                            <MudText Typo="Typo.h6">Objectif</MudText>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudCard>
+                        <MudCardContent>
+                            <MudText Typo="Typo.subtitle1">Cartes 9 et 10</MudText>
                             <MudList T="string" Dense="true">
-                                <MudListItem T="string"><b>Victoire normale :</b> 5 points ou moins + dire "KAMOUL" à son tour <b>AVANT</b> de jouer</MudListItem>
-                                <MudListItem T="string">
-                                    <b>KAMOUL au score :</b>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string">Score ≤ -15 : 30 points en main</MudListItem>
-                                        <MudListItem T="string">Score ≥ 15 : Exactement son cumul en main</MudListItem>
-                                    </MudList>
-                                </MudListItem>
-                                <MudListItem T="string"><b>Interdit :</b> Jouer et dire KAMOUL dans le même tour</MudListItem>
+                                <MudListItem T="string"><b>Action :</b> Regarder une carte dans le jeu d'un adversaire</MudListItem>
+                                <MudListItem T="string"><b>Utilisation :</b> Au moment de la défausse directe (carte piochée uniquement)</MudListItem>
+                                <MudListItem T="string"><b>Déclaration :</b> Aucune (optionnelle)</MudListItem>
                             </MudList>
-
-                            <MudText Typo="Typo.h6" Class="mt-2">Actions à Son Tour</MudText>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudCard>
+                        <MudCardContent>
+                            <MudText Typo="Typo.subtitle1">Valet (V) et Dame (Q)</MudText>
                             <MudList T="string" Dense="true">
-                                <MudListItem T="string"><b>KAMOUL</b> (si ≤ 5 points, AVANT de jouer)</MudListItem>
-                                <MudListItem T="string"><b>CONTRE KAMOUL</b> (contester, passe le tour)</MudListItem>
-                                <MudListItem T="string">
-                                    <b>Piocher</b> (paquet ou défausse)
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string"><b>Pioche défausse :</b> Obligation d'échanger (pas de défausse directe)</MudListItem>
-                                    </MudList>
-                                </MudListItem>
+                                <MudListItem T="string"><b>Action :</b> Échanger deux cartes sans les regarder</MudListItem>
+                                <MudListItem T="string"><b>Utilisation :</b> Au moment de la défausse directe (carte piochée uniquement)</MudListItem>
+                                <MudListItem T="string"><b>Déclaration :</b> Aucune (responsabilité des joueurs d'être attentifs)</MudListItem>
                             </MudList>
-                        </MudItem>
-                        <MudItem xs="12" md="6">
-                            <MudText Typo="Typo.h6">Valeurs des Cartes</MudText>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudCard>
+                        <MudCardContent>
+                            <MudText Typo="Typo.subtitle1">Roi (K)</MudText>
                             <MudList T="string" Dense="true">
-                                <MudListItem T="string"><b>1-10 :</b> Valeur nominale</MudListItem>
-                                <MudListItem T="string"><b>V, Q :</b> 1 point</MudListItem>
-                                <MudListItem T="string"><b>K Rouge :</b> 0 point</MudListItem>
-                                <MudListItem T="string"><b>K Noir :</b> 15 points</MudListItem>
+                                <MudListItem T="string"><b>Action :</b> Regarder deux cartes et les échanger ou non</MudListItem>
+                                <MudListItem T="string"><b>Utilisation :</b> Au moment de la défausse directe (carte piochée uniquement)</MudListItem>
+                                <MudListItem T="string"><b>Déclaration :</b> <b>OBLIGATOIRE</b> (annoncer la décision d'échanger ou non)</MudListItem>
                             </MudList>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+            </MudGrid>
+        </MudExpansionPanel>
 
-                            <MudText Typo="Typo.h6" Class="mt-2">Capacités (à la défausse, carte piochée uniquement)</MudText>
+        <MudExpansionPanel Text="📊 Comptage des Points">
+            <MudText Typo="Typo.h5" Class="mb-2">Système de Points</MudText>
+            <MudGrid>
+                <MudItem xs="12" md="6">
+                    <MudText Typo="Typo.h6">Points de Base</MudText>
+                    <MudList T="string" Dense="true">
+                        <MudListItem T="string"><b>Score en main :</b> Somme des valeurs de toutes les cartes en main</MudListItem>
+                        <MudListItem T="string"><b>Score cumulé :</b> Total des points accumulés sur plusieurs manches</MudListItem>
+                    </MudList>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudText Typo="Typo.h6">Points Spéciaux</MudText>
+                    <MudList T="string" Dense="true">
+                        <MudListItem T="string"><b>KAMOUL :</b> -5 points</MudListItem>
+                        <MudListItem T="string"><b>KAMOUL ULTIME :</b> -15 points (défausser toutes ses cartes)</MudListItem>
+                        <MudListItem T="string"><b>KAMOUL au score :</b> Retour à 0 points cumulés</MudListItem>
+                    </MudList>
+                </MudItem>
+            </MudGrid>
+
+            <MudText Typo="Typo.h6" Class="mt-4">Seuils Importants</MudText>
+            <MudGrid>
+                <MudItem xs="12" md="6">
+                    <MudCard>
+                        <MudCardContent>
+                            <MudText Typo="Typo.subtitle1">Seuil de 15 Points Cumulés</MudText>
                             <MudList T="string" Dense="true">
-                                <MudListItem T="string"><b>7/8 :</b> Regarder une de ses cartes (optionnel)</MudListItem>
-                                <MudListItem T="string"><b>9/10 :</b> Regarder une carte adverse (optionnel)</MudListItem>
-                                <MudListItem T="string"><b>V/Q :</b> Échanger 2 cartes (optionnel, pas de déclaration)</MudListItem>
-                                <MudListItem T="string"><b>K :</b> Regarder 2 cartes et échanger ou non (optionnel, <b>déclaration OBLIGATOIRE</b>)</MudListItem>
+                                <MudListItem T="string"><b>Possibilité :</b> Faire son score à partir de 15 points cumulés</MudListItem>
+                                <MudListItem T="string"><b>KAMOUL au score :</b> Si le joueur a exactement son nombre de points cumulés en points dans son jeu</MudListItem>
+                                <MudListItem T="string"><b>Si KAMOUL au score :</b> Retour à 0 de cumul</MudListItem>
+                                <MudListItem T="string"><b>Si KAMOUL au score puis CONTRE KAMOUL :</b> 0 de score</MudListItem>
                             </MudList>
-
-                            <MudText Typo="Typo.h6" Class="mt-2">Points Spéciaux</MudText>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudCard>
+                        <MudCardContent>
+                            <MudText Typo="Typo.subtitle1">Seuil de 30 Points en Une Main</MudText>
                             <MudList T="string" Dense="true">
-                                <MudListItem T="string"><b>KAMOUL :</b> -5 points</MudListItem>
-                                <MudListItem T="string"><b>KAMOUL ULTIME :</b> -15 points (défausser toutes ses cartes)</MudListItem>
-                                <MudListItem T="string">
-                                    <b>KAMOUL au score :</b>
-                                    <MudList T="string" Dense="true">
-                                        <MudListItem T="string">Score &lt; 15 : Fixé à -31 points</MudListItem>
-                                        <MudListItem T="string">Score ≥ 15 : Retour à 0 (sans CONTRE KAMOUL)</MudListItem>
-                                        <MudListItem T="string">Avec CONTRE KAMOUL : Aucune perte de points</MudListItem>
-                                    </MudList>
-                                </MudListItem>
+                                <MudListItem T="string"><b>Condition :</b> À partir de -15 points cumulés</MudListItem>
+                                <MudListItem T="string"><b>Si KAMOUL :</b> Victoire automatique (-31 points)</MudListItem>
+                                <MudListItem T="string"><b>Si KAMOUL puis CONTRE KAMOUL :</b> 0 de score</MudListItem>
+                                <MudListItem T="string"><b>Si CONTRE KAMOUL :</b> 0 de score</MudListItem>
                             </MudList>
-                        </MudItem>
-                    </MudGrid>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+            </MudGrid>
 
-                    <MudAlert Severity="Severity.Info" Variant="Variant.Filled" Dense="true" Class="mt-4">
-                        <MudText Typo="Typo.h6">Pénalités (1 carte chacune)</MudText>
-                        <MudList T="string" Dense="true">
-                            <MudListItem T="string">Cartes décollées du paquet (2+ cartes, ajoutées au jeu)</MudListItem>
-                            <MudListItem T="string">Jouer hors tour</MudListItem>
-                            <MudListItem T="string">Carte retournée sans défausse</MudListItem>
-                            <MudListItem T="string">Changer l'ordre après vérification</MudListItem>
-                        </MudList>
-                    </MudAlert>
-                </MudExpansionPanel>
-            </MudExpansionPanels>
-        </MudPaper>
+            <MudText Typo="Typo.h6" Class="mt-4">Fin de Manche</MudText>
+            <MudAlert Severity="Severity.Warning" Variant="Variant.Filled" Dense="true">
+                <b>Conditions de Fin :</b>
+                <MudList T="string" Dense="true">
+                    <MudListItem T="string">Un joueur dépasse <b>31 points cumulés</b> OU <b>-31 points cumulés</b></MudListItem>
+                    <MudListItem T="string">Comptabilisation des points selon les valeurs des cartes en main</MudListItem>
+                    <MudListItem T="string"><b>Cas particuliers :</b> 2 manches pour un joueur à -31 si un autre dépasse 31 sur la même main</MudListItem>
+                </MudList>
+            </MudAlert>
+        </MudExpansionPanel>
+
+        <MudExpansionPanel Text="⚠️ Pénalités">
+            <MudText Typo="Typo.h5" Class="mb-2">Pénalités de Pioche</MudText>
+            <MudCard Class="mb-4">
+                <MudCardContent>
+                    <MudText Typo="Typo.subtitle1">Cartes Décollées</MudText>
+                    <MudList T="string" Dense="true">
+                        <MudListItem T="string"><b>Situation :</b> Deux ou plusieurs cartes se décollent du paquet de pioche</MudListItem>
+                        <MudListItem T="string"><b>Pénalité :</b> 1 carte de pénalité par carte décollée supplémentaire</MudListItem>
+                        <MudListItem T="string"><b>Ajout :</b> Le joueur doit ajouter ces cartes à son jeu</MudListItem>
+                        <MudListItem T="string"><b>Application :</b> Même règle si pioche dans la défausse</MudListItem>
+                        <MudListItem T="string"><b>Note :</b> Une seule carte décollée ne génère aucune pénalité</MudListItem>
+                    </MudList>
+                </MudCardContent>
+            </MudCard>
+
+            <MudText Typo="Typo.h5" Class="mb-2">Pénalités de Jeu</MudText>
+            <MudGrid>
+                <MudItem xs="12" md="4">
+                    <MudCard>
+                        <MudCardContent>
+                            <MudText Typo="Typo.subtitle1">Jouer Hors Tour</MudText>
+                            <MudList T="string" Dense="true">
+                                <MudListItem T="string"><b>Situation :</b> Jouer en dehors de son tour</MudListItem>
+                                <MudListItem T="string"><b>Pénalité :</b> 1 carte</MudListItem>
+                                <MudListItem T="string"><b>Note :</b> S'applique aussi au KAMOUL</MudListItem>
+                            </MudList>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+                <MudItem xs="12" md="4">
+                    <MudCard>
+                        <MudCardContent>
+                            <MudText Typo="Typo.subtitle1">Carte Retournée</MudText>
+                            <MudList T="string" Dense="true">
+                                <MudListItem T="string"><b>Situation :</b> Retourner une carte sans pouvoir la défausser</MudListItem>
+                                <MudListItem T="string"><b>Pénalité :</b> 1 carte</MudListItem>
+                            </MudList>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+                <MudItem xs="12" md="4">
+                    <MudCard>
+                        <MudCardContent>
+                            <MudText Typo="Typo.subtitle1">Changement d'Ordre</MudText>
+                            <MudList T="string" Dense="true">
+                                <MudListItem T="string"><b>Situation :</b> Changer l'ordre de ses cartes après vérification par un autre joueur</MudListItem>
+                                <MudListItem T="string"><b>Pénalité :</b> 1 carte</MudListItem>
+                            </MudList>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+            </MudGrid>
+
+            <MudText Typo="Typo.h5" Class="mt-4 mb-2">Pénalités Spéciales</MudText>
+            <MudAlert Severity="Severity.Error" Variant="Variant.Filled" Dense="true">
+                <MudText Typo="Typo.subtitle1">KAMOUL &gt; 5 Points</MudText>
+                <MudList T="string" Dense="true" Class="mt-2">
+                    <MudListItem T="string"><b>Situation :</b> Annoncer KAMOUL avec plus de 5 points</MudListItem>
+                    <MudListItem T="string"><b>Pénalité :</b> Somme de tous les scores de la main en cours</MudListItem>
+                    <MudListItem T="string"><b>Effet :</b> Les autres joueurs ne prennent pas de score</MudListItem>
+                </MudList>
+            </MudAlert>
+        </MudExpansionPanel>
+
+        <MudExpansionPanel Text="🏆 Format Tournoi">
+            <MudText Typo="Typo.h5" Class="mb-2">Structure du Tournoi</MudText>
+            <MudAlert Severity="Severity.Info" Variant="Variant.Filled" Dense="true" Class="mb-4">
+                <b>Hiérarchie :</b>
+                <MudList T="string" Dense="true">
+                    <MudListItem T="string"><b>TOP (Tournoi) :</b> BO3</MudListItem>
+                    <MudListItem T="string"><b>Partie :</b> BO3</MudListItem>
+                    <MudListItem T="string"><b>Manche :</b> BO3</MudListItem>
+                </MudList>
+            </MudAlert>
+
+            <MudText Typo="Typo.h6" Class="mb-2">Règles de Victoire</MudText>
+            <MudGrid>
+                <MudItem xs="12" md="4">
+                    <MudCard>
+                        <MudCardContent>
+                            <MudText Typo="Typo.subtitle1">Manche</MudText>
+                            <MudList T="string" Dense="true">
+                                <MudListItem T="string"><b>Fin :</b> Un joueur dépasse 31 points cumulés OU -31 points cumulés</MudListItem>
+                                <MudListItem T="string"><b>Gagnant :</b> Celui qui a le score le plus bas</MudListItem>
+                            </MudList>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+                <MudItem xs="12" md="4">
+                    <MudCard>
+                        <MudCardContent>
+                            <MudText Typo="Typo.subtitle1">Partie (BO3)</MudText>
+                            <MudList T="string" Dense="true">
+                                <MudListItem T="string"><b>Victoire :</b> 2 manches gagnées</MudListItem>
+                                <MudListItem T="string"><b>Maximum :</b> 3 manches par partie</MudListItem>
+                            </MudList>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+                <MudItem xs="12" md="4">
+                    <MudCard>
+                        <MudCardContent>
+                            <MudText Typo="Typo.subtitle1">TOP (BO3)</MudText>
+                            <MudList T="string" Dense="true">
+                                <MudListItem T="string"><b>Victoire :</b> 2 parties gagnées</MudListItem>
+                                <MudListItem T="string"><b>Maximum :</b> 3 parties par TOP</MudListItem>
+                            </MudList>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+            </MudGrid>
+
+            <MudText Typo="Typo.h6" Class="mt-4 mb-2">Cas d'Égalité</MudText>
+            <MudGrid>
+                <MudItem xs="12" md="6">
+                    <MudCard>
+                        <MudCardContent>
+                            <MudText Typo="Typo.subtitle1">Égalité sur les Manches</MudText>
+                            <MudList T="string" Dense="true">
+                                <MudListItem T="string"><b>Règle :</b> Vérification du goal average sur le total de la partie</MudListItem>
+                                <MudListItem T="string"><b>Calcul :</b> Différence entre les scores totaux des joueurs</MudListItem>
+                            </MudList>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudCard>
+                        <MudCardContent>
+                            <MudText Typo="Typo.subtitle1">Égalité sur les Parties</MudText>
+                            <MudList T="string" Dense="true">
+                                <MudListItem T="string"><b>Règle :</b> Vérification du goal average sur le total du TOP</MudListItem>
+                                <MudListItem T="string"><b>Calcul :</b> Différence entre les scores totaux des joueurs</MudListItem>
+                            </MudList>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+            </MudGrid>
+        </MudExpansionPanel>
+
+        <MudExpansionPanel Text="📖 Référence Rapide">
+            <MudGrid>
+                <MudItem xs="12" md="6">
+                    <MudText Typo="Typo.h6">Objectif</MudText>
+                    <MudList T="string" Dense="true">
+                        <MudListItem T="string"><b>Victoire normale :</b> 5 points ou moins + dire "KAMOUL" à son tour <b>AVANT</b> de jouer</MudListItem>
+                        <MudListItem T="string">
+                            <b>KAMOUL au score :</b>
+                            <MudList T="string" Dense="true">
+                                <MudListItem T="string">Score ≤ -15 : 30 points en main</MudListItem>
+                                <MudListItem T="string">Score ≥ 15 : Exactement son cumul en main</MudListItem>
+                            </MudList>
+                        </MudListItem>
+                        <MudListItem T="string"><b>Interdit :</b> Jouer et dire KAMOUL dans le même tour</MudListItem>
+                    </MudList>
+
+                    <MudText Typo="Typo.h6" Class="mt-2">Actions à Son Tour</MudText>
+                    <MudList T="string" Dense="true">
+                        <MudListItem T="string"><b>KAMOUL</b> (si ≤ 5 points, AVANT de jouer)</MudListItem>
+                        <MudListItem T="string"><b>CONTRE KAMOUL</b> (contester, passe le tour)</MudListItem>
+                        <MudListItem T="string">
+                            <b>Piocher</b> (paquet ou défausse)
+                            <MudList T="string" Dense="true">
+                                <MudListItem T="string"><b>Pioche défausse :</b> Obligation d'échanger (pas de défausse directe)</MudListItem>
+                            </MudList>
+                        </MudListItem>
+                    </MudList>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudText Typo="Typo.h6">Valeurs des Cartes</MudText>
+                    <MudList T="string" Dense="true">
+                        <MudListItem T="string"><b>1-10 :</b> Valeur nominale</MudListItem>
+                        <MudListItem T="string"><b>V, Q :</b> 1 point</MudListItem>
+                        <MudListItem T="string"><b>K Rouge :</b> 0 point</MudListItem>
+                        <MudListItem T="string"><b>K Noir :</b> 15 points</MudListItem>
+                    </MudList>
+
+                    <MudText Typo="Typo.h6" Class="mt-2">Capacités (à la défausse, carte piochée uniquement)</MudText>
+                    <MudList T="string" Dense="true">
+                        <MudListItem T="string"><b>7/8 :</b> Regarder une de ses cartes (optionnel)</MudListItem>
+                        <MudListItem T="string"><b>9/10 :</b> Regarder une carte adverse (optionnel)</MudListItem>
+                        <MudListItem T="string"><b>V/Q :</b> Échanger 2 cartes (optionnel, pas de déclaration)</MudListItem>
+                        <MudListItem T="string"><b>K :</b> Regarder 2 cartes et échanger ou non (optionnel, <b>déclaration OBLIGATOIRE</b>)</MudListItem>
+                    </MudList>
+
+                    <MudText Typo="Typo.h6" Class="mt-2">Points Spéciaux</MudText>
+                    <MudList T="string" Dense="true">
+                        <MudListItem T="string"><b>KAMOUL :</b> -5 points</MudListItem>
+                        <MudListItem T="string"><b>KAMOUL ULTIME :</b> -15 points (défausser toutes ses cartes)</MudListItem>
+                        <MudListItem T="string">
+                            <b>KAMOUL au score :</b>
+                            <MudList T="string" Dense="true">
+                                <MudListItem T="string">Score &lt; 15 : Fixé à -31 points</MudListItem>
+                                <MudListItem T="string">Score ≥ 15 : Retour à 0 (sans CONTRE KAMOUL)</MudListItem>
+                                <MudListItem T="string">Avec CONTRE KAMOUL : Aucune perte de points</MudListItem>
+                            </MudList>
+                        </MudListItem>
+                    </MudList>
+                </MudItem>
+            </MudGrid>
+
+            <MudAlert Severity="Severity.Info" Variant="Variant.Filled" Dense="true" Class="mt-4">
+                <MudText Typo="Typo.h6">Pénalités (1 carte chacune)</MudText>
+                <MudList T="string" Dense="true">
+                    <MudListItem T="string">Cartes décollées du paquet (2+ cartes, ajoutées au jeu)</MudListItem>
+                    <MudListItem T="string">Jouer hors tour</MudListItem>
+                    <MudListItem T="string">Carte retournée sans défausse</MudListItem>
+                    <MudListItem T="string">Changer l'ordre après vérification</MudListItem>
+                </MudList>
+            </MudAlert>
+        </MudExpansionPanel>
+    </MudExpansionPanels>
+</MudPaper>
 
 
