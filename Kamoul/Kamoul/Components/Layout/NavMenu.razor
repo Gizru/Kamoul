@@ -1,36 +1,21 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">
-            <img src="KamoulTitle.png" alt="Kamoul" class="navbar-brand-img" width="200" height="48" />
-        </a>
-    </div>
-</div>
+﻿<MudNavMenu Margin="Margin.Normal" Column="true" Class="py-3" Style="background: transparent;">
+        <MudNavLink Href="/" Match="NavLinkMatch.All" Class="px-3">
+            <MudStack  Row="true" AlignItems="AlignItems.Center" Spacing="2" Style="height:10vh;">
+                <MudImage Src="KamoulIcon.ico" Alt="Accueil" Style="height:50%; width:auto;" />
+                <MudText Typo="Typo.body1" Color="Color.Inherit">Kamoul</MudText>
+            </MudStack>
+        </MudNavLink>
+        <MudNavLink Href="/rules" Class="px-3">
+            <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2" Style="height:10vh;">
+                <MudImage Src="playing-cards.ico" Alt="Règles" Style="height:50%; width:auto;" />
+                <MudText Typo="Typo.body1" Color="Color.Inherit">Règles</MudText>
+            </MudStack>
+        </MudNavLink>
 
-<input type="checkbox" id="navbar-toggler" name="navbar-toggler" title="Navigation menu" class="navbar-toggler" />
-
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <img src="KamoulIcon.ico" alt="Kamoul" class="nav-icon" width="24" height="24" />
-                <span>Kamoul</span>
-            </NavLink>
-        </div>
-
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="rules">
-                <img src="playing-cards.ico" alt="Playing Cards" class="nav-icon" width="24" height="24" />
-                <span>Règles</span>
-            </NavLink>
-        </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="contact">
-                <img src="ContactIcon.ico" alt="Contact" class="nav-icon" width="24" height="24" />
-                <span>Contact</span>
-            </NavLink>
-        </div>
-    </nav>
-</div>
-
+        <MudNavLink Href="/contact" Class="px-3">
+            <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2" Style="height:10vh;">
+                <MudImage Src="ContactIcon.ico" Alt="Contact" Style="height:50%; width:auto;" />
+                <MudText Typo="Typo.body1" Color="Color.Inherit">Contact</MudText>
+            </MudStack>
+        </MudNavLink>
+    </MudNavMenu>

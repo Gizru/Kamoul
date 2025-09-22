@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kamoul")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c38f58e0874132310adb05db768eef24f49d208")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+262b458101987c3014305edc6be9258e66a995fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kamoul")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kamoul")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

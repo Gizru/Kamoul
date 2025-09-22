@@ -1,12 +1,12 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\pjoncourt.LYSIPACK\\OneDrive - lysipack.fr\\Bureau\\Unity\\Kamoul\\Kamoul\\Kamoul\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Kamoul.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Kamoul.bundle.scp.css"
-    },
-    {
       "Id": "C:\\Users\\pjoncourt.LYSIPACK\\OneDrive - lysipack.fr\\Bureau\\Unity\\Kamoul\\Kamoul\\Kamoul\\wwwroot\\ContactIcon.ico",
       "PackagePath": "staticwebassets\\ContactIcon.ico"
+    },
+    {
+      "Id": "C:\\Users\\pjoncourt.LYSIPACK\\OneDrive - lysipack.fr\\Bureau\\Unity\\Kamoul\\Kamoul\\Kamoul\\wwwroot\\Icon.svg",
+      "PackagePath": "staticwebassets\\Icon.svg"
     },
     {
       "Id": "C:\\Users\\pjoncourt.LYSIPACK\\OneDrive - lysipack.fr\\Bureau\\Unity\\Kamoul\\Kamoul\\Kamoul\\wwwroot\\KamoulIcon.ico",
@@ -17,20 +17,20 @@
       "PackagePath": "staticwebassets\\KamoulTitle.png"
     },
     {
-      "Id": "C:\\Users\\pjoncourt.LYSIPACK\\OneDrive - lysipack.fr\\Bureau\\Unity\\Kamoul\\Kamoul\\Kamoul\\wwwroot\\app.css",
-      "PackagePath": "staticwebassets\\app.css"
+      "Id": "C:\\Users\\pjoncourt.LYSIPACK\\OneDrive - lysipack.fr\\Bureau\\Unity\\Kamoul\\Kamoul\\Kamoul\\wwwroot\\Kamoul_Background.png",
+      "PackagePath": "staticwebassets\\Kamoul_Background.png"
     },
     {
-      "Id": "C:\\Users\\pjoncourt.LYSIPACK\\OneDrive - lysipack.fr\\Bureau\\Unity\\Kamoul\\Kamoul\\Kamoul\\wwwroot\\bootstrap\\bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.bundle.min.js"
+      "Id": "C:\\Users\\pjoncourt.LYSIPACK\\OneDrive - lysipack.fr\\Bureau\\Unity\\Kamoul\\Kamoul\\Kamoul\\wwwroot\\Kamoul_Backgroung_mini.png",
+      "PackagePath": "staticwebassets\\Kamoul_Backgroung_mini.png"
     },
     {
-      "Id": "C:\\Users\\pjoncourt.LYSIPACK\\OneDrive - lysipack.fr\\Bureau\\Unity\\Kamoul\\Kamoul\\Kamoul\\wwwroot\\bootstrap\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+      "Id": "C:\\Users\\pjoncourt.LYSIPACK\\OneDrive - lysipack.fr\\Bureau\\Unity\\Kamoul\\Kamoul\\Kamoul\\wwwroot\\cards.svg",
+      "PackagePath": "staticwebassets\\cards.svg"
     },
     {
-      "Id": "C:\\Users\\pjoncourt.LYSIPACK\\OneDrive - lysipack.fr\\Bureau\\Unity\\Kamoul\\Kamoul\\Kamoul\\wwwroot\\bootstrap\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+      "Id": "C:\\Users\\pjoncourt.LYSIPACK\\OneDrive - lysipack.fr\\Bureau\\Unity\\Kamoul\\Kamoul\\Kamoul\\wwwroot\\contact.svg",
+      "PackagePath": "staticwebassets\\contact.svg"
     },
     {
       "Id": "C:\\Users\\pjoncourt.LYSIPACK\\OneDrive - lysipack.fr\\Bureau\\Unity\\Kamoul\\Kamoul\\Kamoul\\wwwroot\\playing-cards.ico",

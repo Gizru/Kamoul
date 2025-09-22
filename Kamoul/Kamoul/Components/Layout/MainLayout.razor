@@ -1,20 +1,32 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
+<MudThemeProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+<MudPopoverProvider />
+
+<MudThemeProvider />
+
+<MudLayout>
+    <MudAppBar Elevation="1"  Style="background: linear-gradient(135deg, #e51627 0%, #052767 100%)">
+        <MudStack Row="true" Edge="Edge.Start" Width="100vh">
+            <MudImage Src="KamoulTitle.png" Alt="Kamoul" Style="max-height:50px" />
+        </MudStack>
+        <MudSpacer />
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.End" OnClick="@((e) => DrawerToggle())" />
+    </MudAppBar>
+    <MudDrawer @bind-Open="_drawerOpen" Anchor="Anchor.End" ClipMode="DrawerClipMode.Always" Elevation="2" Style="background: linear-gradient(135deg, #e51627 0%, #052767 100%)">
         <NavMenu />
-    </div>
+    </MudDrawer>
+    <MudMainContent Style="background-image: url('Kamoul_Background.png'); background-size: 20%; background-position: center; min-height: 100vh;">
+        @Body
+    </MudMainContent>
+</MudLayout>
+@code {
+    bool _drawerOpen = true;
 
-    <main>
-
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
-
-<div id="blazor-error-ui">
-    An unhandled error has occurred.
-    <a href="" class="reload">Reload</a>
-    <a class="dismiss">🗙</a>
-</div>
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+}

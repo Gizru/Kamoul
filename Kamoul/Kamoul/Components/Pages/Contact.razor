@@ -2,30 +2,33 @@
 
 <PageTitle>Contact - Kamoul</PageTitle>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <div class="contact-card" style="background: linear-gradient(135deg, #e51627 0%, #052767 100%) !important; background-color: #e51627 !important;">
-                <h1 class="contact-title">Contactez-nous</h1>
-                <p class="contact-subtitle">Des questions sur les règles du jeu KAMOUL ? Nous sommes là pour vous aider !</p>
-                
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="bi bi-telephone-fill"></i>
-                        <div class="info-content">
-                            <h4>Téléphone</h4>
-                            <a href="tel:+33123456789" class="contact-link">+33 1 23 45 67 89</a>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="bi bi-envelope-fill"></i>
-                        <div class="info-content">
-                            <h4>Email</h4>
-                            <a href="mailto:contact@kamoul.fr" class="contact-link">contact@kamoul.fr</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<MudContainer MaxWidth="MaxWidth.False" Class="pa-4">
+	<MudPaper Elevation="10" Class="pa-6" Style="background: linear-gradient(135deg, #e51627 0%, #052767 100%); color: white; border-radius: 15px;">
+		<MudText Typo="Typo.h4" Align="Align.Center" Class="mb-2">Contactez-nous</MudText>
+		<MudText Typo="Typo.subtitle1" Align="Align.Center" Class="mb-6" Color="Color.Inherit">
+			Des questions sur les règles du jeu KAMOUL ? Nous sommes là pour vous aider !
+		</MudText>
+
+		<MudStack Spacing="3">
+			<MudPaper Elevation="0" Class="d-flex align-center pa-4" Style="background: rgba(255,255,255,0.15); border-radius: 12px;">
+				<MudIcon Icon="@Icons.Material.Filled.Phone" Size="Size.Large" Class="mr-4" Style="color:#e51627; background: rgba(255,255,255,0.1); padding: 12px; border-radius: 50%; border:2px solid rgba(229,22,39,0.3);" />
+				<div>
+					<MudText Typo="Typo.subtitle2" Color="Color.Inherit">Téléphone</MudText>
+					<MudLink Href="tel:+33123456789" Target="_self" Class="d-inline-block" Style="color:white; text-decoration:none; border-bottom:1px solid transparent;">
+						+33 1 23 45 67 89
+					</MudLink>
+				</div>
+			</MudPaper>
+
+			<MudPaper Elevation="0" Class="d-flex align-center pa-4" Style="background: rgba(255,255,255,0.15); border-radius: 12px;">
+				<MudIcon Icon="@Icons.Material.Filled.Email" Size="Size.Large" Class="mr-4" Style="color:#e51627; background: rgba(255,255,255,0.1); padding: 12px; border-radius: 50%; border:2px solid rgba(229,22,39,0.3);" />
+				<div>
+					<MudText Typo="Typo.subtitle2" Color="Color.Inherit">Email</MudText>
+					<MudLink Href="mailto:contact@kamoul.fr" Target="_self" Class="d-inline-block" Style="color:white; text-decoration:none; border-bottom:1px solid transparent;">
+						contact@kamoul.fr
+					</MudLink>
+				</div>
+			</MudPaper>
+		</MudStack>
+	</MudPaper>
+</MudContainer>
